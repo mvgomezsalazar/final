@@ -28,6 +28,7 @@
                 <div class="col-md-8">
                     <button id="ok" name="ok" class="btn btn-success" ng-click="$ctrl.save()" ng-disabled="nabform.$invalid">Aceptar</button>
                     <button id="cancel" name="cancel" class="btn btn-danger" ng-click="$ctrl.cancel()">Cancelar</button>
+                    <button ng-if="location != null" id="remove" name="cancel" class="btn btn-danger" ng-click="delete()">Eliminar</button>
                 </div>
             </div>
     

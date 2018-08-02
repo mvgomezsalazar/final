@@ -1,5 +1,5 @@
 <div id="evento">   
-    
+
     <hr>
     <h1>Eventos</h1>
     <div>
@@ -8,15 +8,35 @@
                 <th>Id</th>
                 <th>Nombre</th>
                 <th>Lugar</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th></th>
+                <th></th>
             </tr>
             <tr ng-repeat="p in $ctrl.eventos">
-            	<td>{{p.id}}</td>
-                <td>{{p.nombre}}</td>
-                <td>{{p.lugar}}</td>
-                <td> <a ng-click="$ctrl.delete(p)">eliminar</a></td>
+                <td>{{p.id}}</td>
+                 <td>
+                    <p ng-if="!$ctrl.editMode">{{p.nombre}}</p>
+                    <input ng-if="$ctrl.editMode" type="text" ng-model="p.nombre"/>                    
+                </td>
+                 <td>
+                    <p ng-if="!$ctrl.editMode">{{p.lugar}}</p>
+                    <input ng-if="$ctrl.editMode" type="text" ng-model="p.lugar"/>                    
+                </td>
+                 <td>
+                    <p ng-if="!$ctrl.editMode">{{p.fecha}}</p>
+                    <input ng-if="$ctrl.editMode" type="text" ng-model="p.fecha"/>                    
+                </td>
+                 <td>
+                    <p ng-if="!$ctrl.editMode">{{p.hora}}</p>
+                    <input ng-if="$ctrl.editMode" type="text" ng-model="p.hora"/>                    
+                </td>
+               <td><button  class="btn btn-success" ng-click="$ctrl.handleModeChange(p)">{{$ctrl.editMode ? 'Actualizar' : 'Editar'}}</button>
+               </td>
+               <td> <button class="btn btn-danger" ng-click="$ctrl.delete(p)">eliminar</button></td>
             </tr>
         </table>
     </div> 
-   
-    
+
+
 </div>

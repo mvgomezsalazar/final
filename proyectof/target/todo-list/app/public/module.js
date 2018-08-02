@@ -40,16 +40,14 @@ module.config(function ($urlRouterProvider, $stateProvider) {
         }
 
     });
-    
-    
-//    $stateProvider.state('public.remove', {
-//        url : '/remove/:id',
-//        component: 'deleteEventoComponent',
-//        lazyLoad: function ($transition$) {
-//            return $transition$.injector().get('$ocLazyLoad').load(['app/public/eventos/evento-directives-component.js',
-//                'app/public/eventos/evento-resource.js', ]);
-//        }
-//    
-//	});
 
+
+    $stateProvider.state('public.posts.edit', {
+        url: '/edit/:id',
+        component: 'editEventoComponent',
+        lazyLoad: function ($transition$) {
+            return $transition$.injector().get('$ocLazyLoad').load(['app/public/eventos/evento-directives-component.js',
+                'app/public/eventos/evento-resource.js', ]);
+        }
+    });
 });
