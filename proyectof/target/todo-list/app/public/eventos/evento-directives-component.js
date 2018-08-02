@@ -125,6 +125,14 @@ module.component('editEventoComponent', {
         };
     }
 });
+        
+ module.controller('eventoController', function () {
+    this.dev = {foo:'test'};
+    
+    this.dev2 = {bar:'test'};
+});
+        
+        
 
 
 

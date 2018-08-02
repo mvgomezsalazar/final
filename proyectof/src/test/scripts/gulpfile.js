@@ -90,7 +90,7 @@ gulp.task('protractor-test', function(callback) {
 
 gulp.task('karma-test', function (done) {
   new Server({
-    configFile: '/Users/tuxtor/Bitbucket/javademo/src/main/scripts/tests/karma.conf.js',
+    configFile: 'c:\FinalCurso\final\proyectof\src\main\scripts\tests\karma.conf.js',
     singleRun: true
   }, function(err){
         if(err === 0){

@@ -1,0 +1,31 @@
+<div id="evento">   
+    
+    <hr>
+    <h1>Eventos</h1>
+
+    <div>
+        <label>ID</label>
+        <input type="text" ng-model="$ctrl.dev.id" placeholder="ID" />
+    </div>    
+    <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="ok"></label>
+                <div class="col-md-8">
+                    <button id="ok" name="ok" class="btn btn-success" ng-click="$ctrl.get()">Aceptar</button>                    
+                </div>
+            </div>
+    
+    <div>
+        <label>Nombre </label> {{$ctrl.dev.nombre}}
+    </div>
+    <div>
+        <label>Fecha </label> {{$ctrl.dev.fecha}}
+    </div>    
+    <div>
+        <label>Hora </label> {{$ctrl.dev.hora}}
+    </div>
+    <div>
+        <label>Lugar</label> {{$ctrl.dev.lugar}}
+    </div>    
+</div>    
+    

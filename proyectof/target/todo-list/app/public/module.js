@@ -50,4 +50,16 @@ module.config(function ($urlRouterProvider, $stateProvider) {
                 'app/public/eventos/evento-resource.js', ]);
         }
     });
+    
+    $stateProvider.state('public.consultar',{
+            url: '/consultar_individual',
+            data:{
+                title: 'Eventos_consulta'
+            },
+            component: 'eventosConsultaComponent',
+            lazyLoad: function ($transition$) {
+                    return $transition$.injector().get('$ocLazyLoad').load(['app/public/eventos/evento-consulta-component.js',
+                    'app/public/eventos/evento-resource.js',]);
+            }
+        });
 });

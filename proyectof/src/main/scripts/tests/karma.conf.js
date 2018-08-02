@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Tue May 29 2018 12:42:40 GMT-0600 (CST)
+// Generated on Thu Aug 02 2018 16:45:26 GMT-0600 (Hora estándar, América Central)
 
 module.exports = function(config) {
   config.set({
@@ -15,18 +15,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '../node_modules/angular/angular.js',
-      '../node_modules/angular-resource/angular-resource.min.js',
-      '../node_modules/@uirouter/angularjs/release/angular-ui-router.js',
-      '../node_modules/angular-mocks/angular-mocks.js',
-      '../node_modules/oclazyload/dist/ocLazyLoad.js',
-      '../../webapp/app/app.js',
-      '../../webapp/app/ui/module.js',
-      '../../webapp/app/public/module.js',
-      
-      
-      '../../webapp/app/public/demo/demo-component.js',
-      '../../webapp/app/public/demo/demo-component.spec.js'
     ],
 
 
@@ -66,12 +54,12 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['ChromeHeadless'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true,
+    singleRun: false,
 
     // Concurrency level
     // how many browser should be started simultaneous

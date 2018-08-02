@@ -11,10 +11,4 @@ describe('Protractor Demo App', function() {
 		expect(browser.getTitle()).toEqual('Demo MP');
 	});
 
-	it('should have same text', function() {
-		element(by.id('simpleText')).sendKeys('Juan Paco Pedro');
-		expect(element(by.binding('simpleModel')).getText())
-			.toEqual('Juan Paco Pedro');
-	});
-
 });
