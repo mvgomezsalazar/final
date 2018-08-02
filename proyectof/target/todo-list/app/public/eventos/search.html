@@ -1,0 +1,22 @@
+<div id="evento">   
+    
+    <hr>
+    <h1>Eventos</h1>
+    <div>
+        <table class="table">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Lugar</th>
+            </tr>
+            <tr ng-repeat="p in $ctrl.eventos">
+            	<td>{{p.id}}</td>
+                <td>{{p.nombre}}</td>
+                <td>{{p.lugar}}</td>
+                <td> <a ng-click="$ctrl.delete(p)">eliminar</a></td>
+            </tr>
+        </table>
+    </div> 
+   
+    
+</div>

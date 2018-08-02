@@ -20,8 +20,11 @@ module.factory('EventosResource', function ($resource, comm,$log) {
         ,
         'grabar' : {
             method : 'POST'
-        }
-         
+        },
+        
+        'eliminar' : {
+            method : 'DELETE'
+        }         
 //        'persistImage' : {
 //            method : 'POST',
 //            url: 'rest/protected/organizations/persist-image'

@@ -42,9 +42,7 @@ public class EventoEndpoint {
     public Response create(Evento entity) {
         eventoService.create(entity);
 
-        return Response.created(
-                UriBuilder.fromResource(EventoEndpoint.class)
-                        .path(String.valueOf(entity.getId())).build()).build();
+        return Response.ok(entity).build();
     }
 
     @DELETE

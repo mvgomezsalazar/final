@@ -1,4 +1,4 @@
-rest\RestApplication.class
 dao\EventoDao.class
+rest\RestApplication.class
 rest\EventoEndpoint.class
 model\Evento.class

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Aug 01 16:02:48 CST 2018:
+ Iniciando instancia a816c00e-0164-f783-d0a7-00003da70c60 de Derby, versión The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): 
+en el directorio de base de datos C:\Users\siamp-amoino\AppData\Local\Temp\gfembed4374134744788438463tmp\lib\databases\embedded_default con el cargador de clases sun.misc.Launcher$AppClassLoader@18b4aac2
+Cargado desde file:/C:/Users/siamp-amoino/.m2/repository/fish/payara/extras/payara-embedded-all/4.1.1.171/payara-embedded-all-4.1.1.171.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_151-b12
+user.dir=C:\FinalCurso\final\proyectof
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
